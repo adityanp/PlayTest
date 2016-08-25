@@ -1,6 +1,8 @@
-define(["/assets/javascripts/QueryManager.js"], function(QueryManager) {
+define(["/assets/javascripts/QueryManager.js","ko"], function(QueryManager,ko) {
 	console.log("Done....");
 
+	var temp = ko.observable("");
+	
 	var callback= function(data){
 		
 		console.log("Inside call back "+ data);
