@@ -1,9 +1,11 @@
 requirejs.config({
-	
-	jquery: 'javascripts/lib/jquery-1.9.0'
-	
+	async: true,
+	parseOnLoad: true,
+	packages: [],
+	paths: {
+		jquery: 'https://code.jquery.com/jquery-3.1.0'
+	}
+
 });
 
-define(['jquery'], function (jq) {
-    return jq.noConflict( true );
-});
+requirejs(["assets/javascripts/main"]); 

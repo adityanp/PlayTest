@@ -11,3 +11,7 @@ libraryDependencies ++= Seq(
   cache,
   javaWs
 )
+
+
+
+//libraryDependencies += "com.google.code.gson" % "gson" % "2.7"
